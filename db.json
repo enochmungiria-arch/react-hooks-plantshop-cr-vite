@@ -24,7 +24,8 @@
       "id": "4",
       "name": "Pothos",
       "image": "./images/pothos.jpg",
-      "price": 12.11
+      "price": 12.11,
+      "isInStock": false
     },
     {
       "id": "5",
@@ -44,9 +45,12 @@
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
     },
-    
-    
-    
+    {
+      "name": "calathea",
+      "image": "./images/calathea.jpg",
+      "price": 11.11,
+      "id": "6urQfRtg-Lk"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

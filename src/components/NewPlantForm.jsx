@@ -11,7 +11,7 @@ function NewPlantForm({ onAddPlant }) {
     const newPlant = {
       name: name,
       image: image,
-      price: parseFloat(price),
+      price: price,
     };
 
     onAddPlant(newPlant);
@@ -24,6 +24,7 @@ function NewPlantForm({ onAddPlant }) {
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -32,6 +33,7 @@ function NewPlantForm({ onAddPlant }) {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+
         <input
           type="text"
           name="image"
@@ -39,6 +41,7 @@ function NewPlantForm({ onAddPlant }) {
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
+
         <input
           type="number"
           name="price"
@@ -47,6 +50,7 @@ function NewPlantForm({ onAddPlant }) {
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         />
+
         <button type="submit">Add Plant</button>
       </form>
     </div>
